@@ -13,7 +13,6 @@ URL: http://www.hellkvist.org/software/index.php3#XMerlin
 License: GPL
 Group: System/X11
 Buildrequires: X11-devel
-BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description
 XMerlin is a simple character recognition engine for X11-based Web pads
