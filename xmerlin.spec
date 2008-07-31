@@ -1,7 +1,7 @@
 %define name    xmerlin
 %define version 0.9b
 %define tver    0.9
-%define release %mkrel 8
+%define release %mkrel 10
 
 Summary: Character recognition engine for X11 devices
 Name: %{name}
