@@ -1,18 +1,18 @@
 %define name    xmerlin
 %define version 0.9b
 %define tver    0.9
-%define release %mkrel 12
+%define release %mkrel 13
 
 Summary: Character recognition engine for X11 devices
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{tver}_public.tar.bz2
-Patch0: xmerlin-0.9b-gcc3_4.patch.bz2
+Patch0: xmerlin-0.9b-gcc3_4.patch
 URL: http://www.hellkvist.org/software/index.php3#XMerlin
 License: GPL
 Group: System/X11
-Buildrequires: X11-devel
+Buildrequires: libx11-devel
 BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description
