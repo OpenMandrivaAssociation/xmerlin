@@ -1,0 +1,10 @@
+--- xmerlin-0.9_public/event.c.bak	2000-09-27 12:24:36.000000000 +0200
++++ xmerlin-0.9_public/event.c	2004-10-30 13:11:11.115293558 +0200
+@@ -238,6 +238,7 @@
+     case PEN_UP: penUp( &pe ); break;
+     case PEN_DOWN: penDown( &pe ); break;
+     default:
++	break;
+     }
+ }
+ 
