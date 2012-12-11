@@ -51,3 +51,59 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/merlin/
 %{_datadir}/merlin/*
 
+
+
+%changelog
+* Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 0.9b-13mdv2011.0
++ Revision: 634904
+- bunzip2 the patch
+- simplify BR
+
+* Wed Sep 09 2009 Thierry Vignaud <tv@mandriva.org> 0.9b-12mdv2010.0
++ Revision: 435146
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tv@mandriva.org> 0.9b-11mdv2009.0
++ Revision: 262459
+- rebuild
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.9b-10mdv2009.0
++ Revision: 257133
+- rebuild
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 0.9b-8mdv2008.1
++ Revision: 140963
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import xmerlin
+
+
+* Thu Aug 24 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.9b-8mdv2007.0
+- Fix group
+- Use mkrel 
+- Fix some rpmlint errors
+
+* Sat Oct 30 2004 Christiaan Welvaart <cjw@daneel.dyndns.org> 0.9b-7mdk
+- fix build with gcc 3.4
+
+* Tue May 06 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.9b-6mdk
+- buildrequires
+
+* Tue Jan 28 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.9b-5mdk
+- rebuild
+
+* Thu Aug 29 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.9b-4mdk
+- rebuild
+
+* Fri Aug 24 2001 Etienne Faure <etienne@mandrakesoft.com> 0.9b-3mdk
+- rebuild
+
+* Thu Feb 15 2001 Lenny Cartier <lenny@mandrakesoft.com> 0.9b-2mdk
+- rebuild
+
+* Fri Sep 29 2000 Lenny Cartier <lenny@mandrakesoft.com> 0.9b-1mdk
+- used srpm from rufus t firefly :
+        Thu Sep 28 2000 rufus t firefly <rufus.t.firefly@linux-mandrake.com>
+            v0.9b (initial packaging)
