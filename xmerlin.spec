@@ -1,19 +1,15 @@
-%define name    xmerlin
-%define version 0.9b
 %define tver    0.9
-%define release %mkrel 13
 
 Summary: Character recognition engine for X11 devices
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:    xmerlin
+Version: 0.9b
+Release: 14
 Source0: %{name}-%{tver}_public.tar.bz2
 Patch0: xmerlin-0.9b-gcc3_4.patch
 URL: http://www.hellkvist.org/software/index.php3#XMerlin
 License: GPL
 Group: System/X11
-Buildrequires: libx11-devel
-BuildRoot: %{_tmppath}/%{name}-buildroot
+Buildrequires: pkgconfig(x11)
 
 %description
 XMerlin is a simple character recognition engine for X11-based Web pads
@@ -34,15 +30,13 @@ perl -pi -e "s|/usr/X11R6/bin|\\$\(INSTALL_PREFIX)/bin||g;" Makefile
 perl -pi -e "s|-O2 -Wall |\\$\(OTHER_CFLAGS) -O2 -Wall ||g;" Makefile
 
 # build
-make OTHER_CFLAGS="$RPM_OPT_FLAGS" INSTALL_PREFIX=%{_prefix}
+make OTHER_CFLAGS="%{optflags}" INSTALL_PREFIX=%{_prefix}
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_prefix}/{bin,share/merlin}/
-make INSTALL_PREFIX=$RPM_BUILD_ROOT%{_prefix} install
+mkdir -p %{buildroot}%{_prefix}/{bin,share/merlin}/
+make INSTALL_PREFIX=%{buildroot}%{_prefix} install
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
