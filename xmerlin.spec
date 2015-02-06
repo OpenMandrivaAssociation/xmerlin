@@ -3,7 +3,7 @@
 Summary: Character recognition engine for X11 devices
 Name:    xmerlin
 Version: 0.9b
-Release: 14
+Release: 15
 Source0: %{name}-%{tver}_public.tar.bz2
 Patch0: xmerlin-0.9b-gcc3_4.patch
 URL: http://www.hellkvist.org/software/index.php3#XMerlin
