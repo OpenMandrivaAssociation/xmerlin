@@ -6,7 +6,7 @@ Version: 0.9b
 Release: 15
 Source0: %{name}-%{tver}_public.tar.bz2
 Patch0: xmerlin-0.9b-gcc3_4.patch
-URL: http://www.hellkvist.org/software/index.php3#XMerlin
+URL: https://www.hellkvist.org/software/index.php3#XMerlin
 License: GPL
 Group: System/X11
 Buildrequires: pkgconfig(x11)
