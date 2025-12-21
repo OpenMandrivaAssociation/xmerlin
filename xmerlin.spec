@@ -9,6 +9,7 @@ Patch0: xmerlin-0.9b-gcc3_4.patch
 URL: https://www.hellkvist.org/software/index.php3#XMerlin
 License: GPL
 Group: System/X11
+BuildRequires:	make
 Buildrequires: pkgconfig(x11)
 
 %description
